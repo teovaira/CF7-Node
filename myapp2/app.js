@@ -36,6 +36,11 @@ app.use('/user2', (req, res)=>{
   console.log("User 2")
   res.send("User 2 Page");
 });
+ 
+app.use('/user2/hello', (req, res)=>{
+  console.log("User 2 Hello")
+  res.send("User 2 Page Hello");
+});
 
 app.listen(port, ()=>{
   console.log("Server is up");
