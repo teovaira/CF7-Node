@@ -6,13 +6,21 @@ app.use(express.json());
 
 app.use(express.urlencoded({extended:true}))
 
+const logger = (req, res, next) => {
+  let url = req.url;
+  console.log('Logger ', req.body);
+  let time = new Date();
+  console.log('Received requests for ' + url + ' at ' + time) ;
+  next()
+}
+
 app.use('/', express.static('files'))
 
 app.get('/', (req, res) => {
   res.send("This is the home page!")
 })
 
-app.post('/user', (req, res) => {
+app.post('/user', logger, (req, res) => {
   let data = req.body
   let username = req.body.username;
   let email = req.body.email
