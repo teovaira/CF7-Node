@@ -185,6 +185,24 @@ exports.options = {
             "descripiton": "Update user"
           }
         }
+      },
+      "delete": {
+        "tags": ["Users"],
+        "description": "Delete user from DB",
+        "parameters": [
+          {
+            "name": "username",
+            "in":"path",
+            "description": "User to delete",
+            "type": "string",
+            "required": true
+          }
+        ],
+        "responses": {
+          "200": {
+            "description":"Delete a user"
+          }
+        }
       }
     },
     "/api/auth/login": {
@@ -209,6 +227,28 @@ exports.options = {
         "responses": {
           "200": {
             "description": "Token returned"
+          }
+        }
+      }
+    },
+    "/api/user-product/{username}":{
+      "get": {
+        "tags": ["Users and Products"],
+        "parameters": [
+          {
+            "name":"username",
+            "in":"path",
+            "required": true,
+            "description": "Find user and products",
+            "type": "string"
+          }
+        ],
+        "responses":{
+          "200": {
+            "description": "User ans Products",
+            "schema":{
+              "$ref": "#/components/schemas/User"
+            }
           }
         }
       }
