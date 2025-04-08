@@ -27,7 +27,7 @@ $(document).ready(function(){
       let status = response.status
   
       if (status) { 
-          console.log(true,'Επιτυχής σύνδεση του χρήστη');
+          console.log(true,'Επιτυχής σύνδεση του χρήστη', response );
           alert(true,'Επιτυχής σύνδεση του χρήστη');
           $('#frmLogin')[0].reset();
           // Save the token to localStorage
