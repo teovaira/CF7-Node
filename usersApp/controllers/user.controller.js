@@ -13,6 +13,7 @@ exports.findAll = async(req, res) => {
     res.status(200).json({status: true, data: result});
     logger.info("Success in reading all users");
     logger.warn("Success in reading all users");
+    logger.error("Message with error");
   } catch (err) {
     console.log("Problem in reading users", err);
     logger.error("Problem in reading all users", err);
