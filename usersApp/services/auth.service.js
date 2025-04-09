@@ -31,7 +31,7 @@ function verifyAccessToken(token){
 }
 
 async function googleAuth(code) {
-  console.log("Google login");
+  console.log("Google login", code);
   const CLIENT_ID = process.env.GOOGLE_CLIENT_ID;
   const CLIENT_SECRET = process.env.GOOGLE_CLIENT_SECRET;
   const REDIRECT_URI = process.env.REDIRECT_URI;
@@ -41,12 +41,15 @@ async function googleAuth(code) {
   try {
     // Exchange code for tokens
     const { tokens } = await oauth2Client.getToken(code)
+    console.log("Step 1", tokens)
     oauth2Client.setCredentials(tokens)
 
     const ticket = await oauth2Client.verifyIdToken({
       idToken: tokens.id_token,
       audience: CLIENT_ID
     });
+
+    console.log("Step 2")
 
     const userInfo = await ticket.getPayload();
     console.log("Google User", userInfo);
