@@ -43,3 +43,14 @@
 {"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"08-04-2025 20:44:3232"}
 {"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"08-04-2025 20:53:4949"}
 {"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"08-04-2025 20:53:4949"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Problem in reading all users Operation `users.find()` buffering timed out after 10000ms","stack":"MongooseError: Operation `users.find()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (C:\\Users\\markos\\Desktop\\CF7-Node\\usersApp\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:594:17)\n    at processTimers (node:internal/timers:529:7)","timestamp":"14-04-2025 19:17:1010"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"14-04-2025 19:18:5757"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"14-04-2025 19:18:5757"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"14-04-2025 19:24:1616"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"14-04-2025 19:24:1616"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"14-04-2025 19:25:088"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"14-04-2025 19:25:088"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"14-04-2025 19:31:4040"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"14-04-2025 19:31:4040"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"14-04-2025 19:41:4848"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"14-04-2025 19:41:4848"}
