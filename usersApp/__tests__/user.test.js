@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const request = require("supertest");
 
 const authService = require('../services/auth.service');
+const userService = require('../services/user.services');
 
 const app = require('../app');
 // require('dotenv').config();
@@ -50,21 +51,25 @@ describe("Requests for /api/users/:username", () => {
 
   beforeAll(()=>{
     user = {
-      username: "admin",
-      email: "admin@aueb.gr",
+      username: "lakis",
+      email: "lalakis@aueb.gr",
       roles: ["EDITOR", "READER","ADMIN"]
     };
     token = authService.generateAccessToken(user);
   });
 
   it("Get returns specific user", async()=>{
+    
+    const result = await userService.findLastInsertedUser();
+    console.log("RESULT>>", result);
+    
     const res = await request(app)
-      .get('/api/users/user1')
+      .get('/api/users/'+result.username)
       .set('Authorization', `Bearer ${token}`); 
     
     expect(res.statusCode).toBe(200);
     expect(res.body.status).toBeTruthy();
-    expect(res.body.username).toBe('user1');
-    expect(res.body.email).toBe('user1@aueb.gr');
+    expect(res.body.data.username).toBe(result.username);
+    expect(res.body.data.email).toBe(result.email);
   })
 })
