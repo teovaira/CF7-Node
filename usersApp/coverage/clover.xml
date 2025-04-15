@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1744732871183" clover="3.2.0">
-  <project timestamp="1744732871186" name="All files">
-    <metrics statements="263" coveredstatements="146" conditionals="23" coveredconditionals="9" methods="23" coveredmethods="11" elements="309" coveredelements="166" complexity="0" loc="263" ncloc="263" packages="7" files="13" classes="13"/>
+<coverage generated="1744734546445" clover="3.2.0">
+  <project timestamp="1744734546446" name="All files">
+    <metrics statements="266" coveredstatements="148" conditionals="25" coveredconditionals="11" methods="23" coveredmethods="11" elements="314" coveredelements="170" complexity="0" loc="266" ncloc="266" packages="7" files="13" classes="13"/>
     <package name="usersApp">
       <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.js" path="C:\Users\markos\Desktop\CF7-Node\usersApp\app.js">
@@ -32,7 +32,7 @@
       </file>
     </package>
     <package name="usersApp.controllers">
-      <metrics statements="139" coveredstatements="45" conditionals="11" coveredconditionals="1" methods="14" coveredmethods="3"/>
+      <metrics statements="142" coveredstatements="47" conditionals="13" coveredconditionals="3" methods="14" coveredmethods="3"/>
       <file name="auth.controller.js" path="C:\Users\markos\Desktop\CF7-Node\usersApp\controllers\auth.controller.js">
         <metrics statements="26" coveredstatements="5" conditionals="9" coveredconditionals="0" methods="2" coveredmethods="0"/>
         <line num="1" count="1" type="stmt"/>
@@ -63,7 +63,7 @@
         <line num="40" count="0" type="stmt"/>
       </file>
       <file name="user.controller.js" path="C:\Users\markos\Desktop\CF7-Node\usersApp\controllers\user.controller.js">
-        <metrics statements="62" coveredstatements="33" conditionals="2" coveredconditionals="1" methods="6" coveredmethods="3"/>
+        <metrics statements="65" coveredstatements="35" conditionals="4" coveredconditionals="3" methods="6" coveredmethods="3"/>
         <line num="1" count="1" type="stmt"/>
         <line num="2" count="1" type="stmt"/>
         <line num="3" count="1" type="stmt"/>
@@ -94,38 +94,41 @@
         <line num="44" count="4" type="stmt"/>
         <line num="45" count="4" type="stmt"/>
         <line num="46" count="4" type="stmt"/>
-        <line num="48" count="4" type="stmt"/>
-        <line num="60" count="4" type="stmt"/>
-        <line num="61" count="4" type="stmt"/>
-        <line num="62" count="1" type="stmt"/>
-        <line num="64" count="3" type="stmt"/>
-        <line num="65" count="3" type="stmt"/>
-        <line num="69" count="1" type="stmt"/>
-        <line num="70" count="0" type="stmt"/>
-        <line num="72" count="0" type="stmt"/>
-        <line num="74" count="0" type="stmt"/>
-        <line num="84" count="0" type="stmt"/>
-        <line num="85" count="0" type="stmt"/>
-        <line num="86" count="0" type="stmt"/>
+        <line num="47" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="48" count="3" type="stmt"/>
+        <line num="50" count="4" type="stmt"/>
+        <line num="51" count="4" type="stmt"/>
+        <line num="63" count="4" type="stmt"/>
+        <line num="64" count="4" type="stmt"/>
+        <line num="65" count="0" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="68" count="4" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="73" count="0" type="stmt"/>
+        <line num="75" count="0" type="stmt"/>
+        <line num="77" count="0" type="stmt"/>
+        <line num="87" count="0" type="stmt"/>
         <line num="88" count="0" type="stmt"/>
         <line num="89" count="0" type="stmt"/>
-        <line num="93" count="1" type="stmt"/>
-        <line num="94" count="0" type="stmt"/>
-        <line num="95" count="0" type="stmt"/>
+        <line num="91" count="0" type="stmt"/>
+        <line num="92" count="0" type="stmt"/>
+        <line num="96" count="1" type="stmt"/>
         <line num="97" count="0" type="stmt"/>
         <line num="98" count="0" type="stmt"/>
-        <line num="99" count="0" type="stmt"/>
+        <line num="100" count="0" type="stmt"/>
         <line num="101" count="0" type="stmt"/>
         <line num="102" count="0" type="stmt"/>
-        <line num="107" count="1" type="stmt"/>
-        <line num="108" count="0" type="stmt"/>
-        <line num="109" count="0" type="stmt"/>
-        <line num="110" count="0" type="stmt"/>
+        <line num="104" count="0" type="stmt"/>
+        <line num="105" count="0" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
+        <line num="111" count="0" type="stmt"/>
         <line num="112" count="0" type="stmt"/>
         <line num="113" count="0" type="stmt"/>
-        <line num="114" count="0" type="stmt"/>
+        <line num="115" count="0" type="stmt"/>
         <line num="116" count="0" type="stmt"/>
         <line num="117" count="0" type="stmt"/>
+        <line num="119" count="0" type="stmt"/>
+        <line num="120" count="0" type="stmt"/>
       </file>
       <file name="user.product.controller.js" path="C:\Users\markos\Desktop\CF7-Node\usersApp\controllers\user.product.controller.js">
         <metrics statements="51" coveredstatements="7" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="0"/>

@@ -104,7 +104,7 @@ describe("Requests for /api/users", ()=>{
       expect(res.body.status).not.toBeTruthy();
   });
 
-  it("POST Creates a user with empty name, surname, password", async()=>{
+  it("POST Creates a user with empty surname, name, password", async()=>{
     const res = await request(app)
       .post('/api/users')
       .set('Authorization', `Bearer ${token}`)

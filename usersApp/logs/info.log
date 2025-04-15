@@ -125,3 +125,9 @@
 {"label":"MY LABEL FOR PRODUCTS APP","level":"info","message":"Success in reading all users","timestamp":"15-04-2025 18:51:3232"}
 {"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"15-04-2025 18:51:3232"}
 {"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"15-04-2025 18:51:3232"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"info","message":"Success in reading all users","timestamp":"15-04-2025 19:00:5959"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"15-04-2025 19:00:5959"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"15-04-2025 19:00:5959"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"info","message":"Success in reading all users","timestamp":"15-04-2025 19:07:2424"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"warn","message":"Success in reading all users","timestamp":"15-04-2025 19:07:2424"}
+{"label":"MY LABEL FOR PRODUCTS APP","level":"error","message":"Message with error","timestamp":"15-04-2025 19:07:2424"}
