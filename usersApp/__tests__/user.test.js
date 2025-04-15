@@ -102,6 +102,26 @@ describe("Requests for /api/users", ()=>{
 
       expect(res.statusCode).toBe(400);
       expect(res.body.status).not.toBeTruthy();
+  });
+
+  it("POST Creates a user with empty name, surname, password", async()=>{
+    const res = await request(app)
+      .post('/api/users')
+      .set('Authorization', `Bearer ${token}`)
+      .send({
+        username: 'test6',
+        password:'',
+        name:'',
+        surname:'',
+        email:'test6@aueb.gr',
+        address: {
+          area: 'area23',
+          road: 'road23'
+        }
+      });
+
+      expect(res.statusCode).toBe(400);
+      expect(res.body.status).not.toBeTruthy();
   })
 });
 
