@@ -130,8 +130,10 @@ exports.checkDuplicateEmail = async(req, res) => {
   try {
     const result = await User.findOne({ email: email });
     if (result) {
+      console.log("Exists")
       res.status(400).json({ status: false, data: result });
     } else {
+      console.log("Not Exists")
       res.status(200).json({ status: true, data: result });
     }
   } catch (err) {
